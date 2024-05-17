@@ -26,8 +26,7 @@ Before running the tests, ensure you have the following prerequisites installed:
 
 To install Cypress, navigate to the project directory and run:
 
-```bash
-npm install cypress --save-dev
+- npm install cypress --save-dev
 
 Refer below link for cypress guide and reference examples
 
@@ -51,13 +50,15 @@ https://docs.cypress.io/guides/overview/why-cypress
 ![image](https://github.com/Simundevops/CypressAutomation/assets/30777578/c8133489-9d4f-452b-b0ca-6c4c13d41941)
 
 4. Configure to Cloud dashboard to see you execution report with headless mode. Please follow below link.
-   https://docs.cypress.io/guides/cloud/introduction
+   [https://docs.cypress.io/guides/cloud/introduction]
 
 ![image](https://github.com/Simundevops/CypressAutomation/assets/30777578/26dbc3e9-9bfa-4998-a33b-a18b8b5cd711)
 
 Please find below link to see the Result:
-https://cloud.cypress.io/projects/jwnqk7/runs/1/test-results?actions=%5B%5D&browsers=%5B%5D&groups=%5B%5D&isFlaky=%5B%5D&modificationDateRange=%7B%22startDate%22%3A%221970-01-01%22%2C%22endDate%22%3A%222038-01-19%22%7D&orderBy=EXECUTION_ORDER&oses=%5B%5D&specs=%5B%5D&statuses=%5B%5D&testingTypesEnum=%5B%5D
+[https://cloud.cypress.io/projects/jwnqk7/runs/1/test-results?actions=%5B%5D&browsers=%5B%5D&groups=%5B%5D&isFlaky=%5B%5D&modificationDateRange=%7B%22startDate%22%3A%221970-01-01%22%2C%22endDate%22%3A%222038-01-19%22%7D&orderBy=EXECUTION_ORDER&oses=%5B%5D&specs=%5B%5D&statuses=%5B%5D&testingTypesEnum=%5B%5D]
 
+
+- By Simun Yugashakti(2024-05-16)
 
 
 
