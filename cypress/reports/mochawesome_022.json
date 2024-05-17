@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-16T23:44:43.978Z",
+    "end": "2024-05-16T23:44:49.046Z",
+    "duration": 5068,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "43b1bdc6-63a0-4051-ab41-a9c60eaf1da9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\TS_007_CE_Functionality.cy.js",
+      "file": "cypress\\e2e\\TS_007_CE_Functionality.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fcee0231-108a-4f0a-826c-048b251f157b",
+          "title": "GoogleCalculatorTest_CE Button",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_001:Check by pressing \"2\" and 3\" then \"CE\", the text area must have only \"2\" now ",
+              "fullTitle": "GoogleCalculatorTest_CE Button TC_001:Check by pressing \"2\" and 3\" then \"CE\", the text area must have only \"2\" now ",
+              "timedOut": null,
+              "duration": 4785,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Type: 2 and 3\ncy.get('[jsname=\"lVjWed\"]').click(); //2\ncy.get('[jsname=\"KN1kY\"]').click(); //3\n// Verify the result is 23\ncy.get('#cwos').should('have.text', '23');\n//Click on CE\ncy.get('[aria-label=\"clear entry\"]').click(); //-\n// Verify the result is 1 -\ncy.get('#cwos').should('have.text', '2');\n// CE test completed\ncy.logSuccess('TC_001: Completed!!');",
+              "err": {},
+              "uuid": "48e6e91f-415b-4954-bfa3-286cf1b457f5",
+              "parentUUID": "fcee0231-108a-4f0a-826c-048b251f157b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "48e6e91f-415b-4954-bfa3-286cf1b457f5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4785,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

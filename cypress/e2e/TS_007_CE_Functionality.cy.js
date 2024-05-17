@@ -8,7 +8,7 @@ describe('GoogleCalculatorTest_CE Button', () => {
         cy.get('[aria-label="clear entry"]').click({force: true});
     });
 
-    it('TC_001:Check by pressing "2" and 3" then "CE", the text area must have only "2" now ', () => {
+    it('TC_001:Check by pressing "2" and 3" then "CE", the text area must have only "2" ', () => {
         // Type: 2 and 3
         cy.get('[jsname="lVjWed"]').click();//2
         cy.get('[jsname="KN1kY"]').click();//3

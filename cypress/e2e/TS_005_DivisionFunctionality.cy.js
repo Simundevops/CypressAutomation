@@ -7,7 +7,7 @@ describe('GoogleCalculatorTest_Division', () => {
         cy.get('[aria-label="all clear"]').click({force: true});
         cy.get('[aria-label="clear entry"]').click({force: true});
     });
-    it('TC_001:Perform Division Operation using Google calculator: 8 / 2 = 4', () => {
+    it('TC_001:Perform Division Operation using Google calculator: 8 ÷ 2 = 4', () => {
         const selectors = ['[jsname="T7PMFe"]','[jsname="WxTTNd"]','[jsname="lVjWed"]','[jsname="Pt8tGc"]'];
         // Loop through the array and click each element
         selectors.forEach(selector => {
@@ -19,7 +19,7 @@ describe('GoogleCalculatorTest_Division', () => {
         cy.logSuccess('TC_001:Completed!!');
     });
 
-    it('TC_002: Division by 0: 8 / 0 = Infinity', () => {
+    it('TC_002: Division by 0: 8 ÷ 0 = Infinity', () => {
         const selectors = ['[jsname="T7PMFe"]','[jsname="WxTTNd"]','[jsname="bkEvMb"]','[jsname="Pt8tGc"]'];
         // Loop through the array and click each element
         selectors.forEach(selector => {
@@ -32,7 +32,7 @@ describe('GoogleCalculatorTest_Division', () => {
 
     });
 
-    it('TC_003: Division with 0: 0 / 2 = 0', () => {
+    it('TC_003: Division with 0: 0 ÷ 2 = 0', () => {
             const selectors = ['[jsname="bkEvMb"]','[jsname="WxTTNd"]','[jsname="lVjWed"]','[jsname="Pt8tGc"]'];
             // Loop through the array and click each element
             selectors.forEach(selector => {
@@ -62,7 +62,7 @@ describe('GoogleCalculatorTest_Division', () => {
     
     });
     
-    it('TC_005:Diivision of one negative number and one positive number: -9 ÷ 3 = -3', () => {
+    it('TC_005:Division of one negative number and one positive number: -9 ÷ 3 = -3', () => {
             const selectors = ['[jsname="pPHzQc"]','[jsname="XoxYJ"]','[jsname="WxTTNd"]','[jsname="KN1kY"]'];
             // Loop through the array and click each element
             selectors.forEach(selector => {
