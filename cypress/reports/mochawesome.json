@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-16T21:18:50.263Z",
+    "end": "2024-05-16T21:18:56.497Z",
+    "duration": 6234,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c9f859e-b332-4c81-8ecc-8947e2d1e73e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\TS_001_CheckButtonAvailability.cy.js",
+      "file": "cypress\\e2e\\TS_001_CheckButtonAvailability.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "62a04d63-5eb2-42d9-8a45-eaf416aeb70d",
+          "title": "GoogleCalculatorTest_CheckButtons(0123456789.=+-*÷AC/CE)",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check Buttons on Google: 0123456789.=+-*÷AC/CE",
+              "fullTitle": "GoogleCalculatorTest_CheckButtons(0123456789.=+-*÷AC/CE) Check Buttons on Google: 0123456789.=+-*÷AC/CE",
+              "timedOut": null,
+              "duration": 5749,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//AC - Button\ncy.get('[aria-label=\"all clear\"]').should('be.visible');\ncy.get('[aria-label=\"all clear\"]').click();\n//CE - Button\ncy.get('[aria-label=\"clear entry\"]').should('be.visible');\ncy.get('[aria-label=\"clear entry\"]').click();\nconst selectors = ['[jsname=\"bkEvMb\"]', '[jsname=\"N10B9\"]', '[jsname=\"lVjWed\"]', '[jsname=\"KN1kY\"]', '[jsname=\"xAP7E\"]', '[jsname=\"Ax5wH\"]', '[jsname=\"abcgof\"]', '[jsname=\"rk7bOd\"]', '[jsname=\"T7PMFe\"]', '[jsname=\"XoxYJ\"]', '[jsname=\"YrdHyf\"]', '[jsname=\"Pt8tGc\"]', '[jsname=\"XSr6wc\"]', '[jsname=\"pPHzQc\"]', '[jsname=\"YovRWb\"]', '[jsname=\"WxTTNd\"]'];\nselectors.forEach(selector => {\n  cy.get(selector).should('be.visible');\n  cy.logSuccess(cy.get(selector) + \"is visible!!\");\n});\ncy.logSuccess('0,1,2,3,4,5,6,7,8,9,.,=,+,-,*,÷,AC,CE Buttons are visible !!');",
+              "err": {},
+              "uuid": "a7d616dc-e6b9-40c2-963a-500340bd4dbc",
+              "parentUUID": "62a04d63-5eb2-42d9-8a45-eaf416aeb70d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a7d616dc-e6b9-40c2-963a-500340bd4dbc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5749,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

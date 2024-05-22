@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-17T01:08:10.670Z",
+    "end": "2024-05-17T01:08:30.456Z",
+    "duration": 19786,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e7635156-af71-4107-8638-d5e43f5e0b0f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\TS_004_MultiplyFunctionality.cy.js",
+      "file": "cypress\\e2e\\TS_004_MultiplyFunctionality.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d9bfd781-b3d3-4be3-8da6-35465c766dd6",
+          "title": "GoogleCalculatorTest_Multiplication",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_001:Perform Multiplication Operation using Google calculator: 4 x 6 = 24",
+              "fullTitle": "GoogleCalculatorTest_Multiplication TC_001:Perform Multiplication Operation using Google calculator: 4 x 6 = 24",
+              "timedOut": null,
+              "duration": 4631,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const selectors = ['[jsname=\"xAP7E\"]', '[jsname=\"YovRWb\"]', '[jsname=\"abcgof\"]', '[jsname=\"Pt8tGc\"]'];\n// Loop through the array and click each element\nselectors.forEach(selector => {\n  cy.get(selector).click();\n});\n//  Verify the result is 24\ncy.get('#cwos').should('have.text', '24');\n// Multiplication test completed\ncy.logSuccess('TC_001: Completed!!');",
+              "err": {},
+              "uuid": "d7daed79-afeb-4b66-886f-33e4fa2b2127",
+              "parentUUID": "d9bfd781-b3d3-4be3-8da6-35465c766dd6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_002:Multiplication with 0: 4 x 0 = 0 ",
+              "fullTitle": "GoogleCalculatorTest_Multiplication TC_002:Multiplication with 0: 4 x 0 = 0 ",
+              "timedOut": null,
+              "duration": 4490,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const selectors = ['[jsname=\"xAP7E\"]', '[jsname=\"YovRWb\"]', '[jsname=\"bkEvMb\"]', '[jsname=\"Pt8tGc\"]'];\n// Loop through the array and click each element\nselectors.forEach(selector => {\n  cy.get(selector).click();\n});\n// Verify the result is 0\ncy.get('#cwos').should('have.text', '0');\n// Multiplication test completed\ncy.logSuccess('TC_002:Completed!!');",
+              "err": {},
+              "uuid": "6e1e0422-3f2b-4dbd-a2b1-93138b8a1302",
+              "parentUUID": "d9bfd781-b3d3-4be3-8da6-35465c766dd6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_003:Multiplication of two negative number : -5x-2=10",
+              "fullTitle": "GoogleCalculatorTest_Multiplication TC_003:Multiplication of two negative number : -5x-2=10",
+              "timedOut": null,
+              "duration": 5208,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const selectors = ['[jsname=\"pPHzQc\"]', '[jsname=\"Ax5wH\"]', '[jsname=\"YovRWb\"]', '[jsname=\"pPHzQc\"]', '[jsname=\"lVjWed\"]'];\n// Loop through the array and click each element\nselectors.forEach(selector => {\n  cy.get(selector).click();\n});\n// Verify the result is 0\ncy.get('#cwos').should('have.text', '-5 × -2');\n// Press Enter\ncy.get('[jsname=\"Pt8tGc\"]').click(); //=\n// Verify the result is -15\ncy.get('#cwos').should('have.text', '10');\n// Multiplication test completed\ncy.logSuccess('TC_003:Completed!!');",
+              "err": {},
+              "uuid": "786bd9b2-8c4e-4db4-a53e-5077de166714",
+              "parentUUID": "d9bfd781-b3d3-4be3-8da6-35465c766dd6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_004:Multiplication of one negative number and one positive number: -5x6=-30",
+              "fullTitle": "GoogleCalculatorTest_Multiplication TC_004:Multiplication of one negative number and one positive number: -5x6=-30",
+              "timedOut": null,
+              "duration": 4265,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const selectors = ['[jsname=\"pPHzQc\"]', '[jsname=\"Ax5wH\"]', '[jsname=\"YovRWb\"]', '[jsname=\"abcgof\"]'];\n// Loop through the array and click each element\nselectors.forEach(selector => {\n  cy.get(selector).click();\n});\n// Verify the result is 0\ncy.get('#cwos').should('have.text', '-5 × 6');\n// Press Enter\ncy.get('[jsname=\"Pt8tGc\"]').click(); //=\n// Verify the result is -15\ncy.get('#cwos').should('have.text', '-30');\n// Multiplication test completed\ncy.logSuccess('TC_004:Completed!!');",
+              "err": {},
+              "uuid": "2582f6fc-92bd-4f1a-8544-aef19c4e71f9",
+              "parentUUID": "d9bfd781-b3d3-4be3-8da6-35465c766dd6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d7daed79-afeb-4b66-886f-33e4fa2b2127",
+            "6e1e0422-3f2b-4dbd-a2b1-93138b8a1302",
+            "786bd9b2-8c4e-4db4-a53e-5077de166714",
+            "2582f6fc-92bd-4f1a-8544-aef19c4e71f9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18594,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-16T21:38:14.285Z",
+    "end": "2024-05-16T21:38:36.058Z",
+    "duration": 21773,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b0c2b8e5-f5ce-4459-a350-2d2be2f29779",
+      "title": "",
+      "fullFile": "cypress\\e2e\\TS_005_DivisionFunctionality.cy.js",
+      "file": "cypress\\e2e\\TS_005_DivisionFunctionality.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "17cf0f18-456d-41f7-8989-3500bc03674c",
+          "title": "GoogleCalculatorTest_Division",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_001:Perform Division Operation using Google calculator: 8 / 2 = 4",
+              "fullTitle": "GoogleCalculatorTest_Division TC_001:Perform Division Operation using Google calculator: 8 / 2 = 4",
+              "timedOut": null,
+              "duration": 4259,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const selectors = ['[jsname=\"T7PMFe\"]', '[jsname=\"WxTTNd\"]', '[jsname=\"lVjWed\"]', '[jsname=\"Pt8tGc\"]'];\n// Loop through the array and click each element\nselectors.forEach(selector => {\n  cy.get(selector).click();\n});\n// Verify the result is 4\ncy.get('#cwos').should('have.text', '4');\n// Division test completed\ncy.logSuccess('TC_001:Completed!!');",
+              "err": {},
+              "uuid": "6bc80926-04ab-4c2a-acd4-6d42692e59f4",
+              "parentUUID": "17cf0f18-456d-41f7-8989-3500bc03674c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_002: Division by 0: 8 / 0 = Infinity",
+              "fullTitle": "GoogleCalculatorTest_Division TC_002: Division by 0: 8 / 0 = Infinity",
+              "timedOut": null,
+              "duration": 3672,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const selectors = ['[jsname=\"T7PMFe\"]', '[jsname=\"WxTTNd\"]', '[jsname=\"bkEvMb\"]', '[jsname=\"Pt8tGc\"]'];\n// Loop through the array and click each element\nselectors.forEach(selector => {\n  cy.get(selector).click();\n});\n// Verify the result is Infinity\ncy.get('#cwos').should('have.text', 'Infinity');\n// Division test completed\ncy.logSuccess('TC_002:Completed!!');",
+              "err": {},
+              "uuid": "948a5a7d-cce8-428b-bc61-b39ee81fa425",
+              "parentUUID": "17cf0f18-456d-41f7-8989-3500bc03674c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_003: Division with 0: 0 / 2 = 0",
+              "fullTitle": "GoogleCalculatorTest_Division TC_003: Division with 0: 0 / 2 = 0",
+              "timedOut": null,
+              "duration": 3970,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const selectors = ['[jsname=\"bkEvMb\"]', '[jsname=\"WxTTNd\"]', '[jsname=\"lVjWed\"]', '[jsname=\"Pt8tGc\"]'];\n// Loop through the array and click each element\nselectors.forEach(selector => {\n  cy.get(selector).click();\n});\n// Verify the result is 4\ncy.get('#cwos').should('have.text', '0');\n// Division test completed\ncy.logSuccess('TC_003:Completed!!');",
+              "err": {},
+              "uuid": "bfd1a854-2f5a-4ebe-b245-26112fa7d53e",
+              "parentUUID": "17cf0f18-456d-41f7-8989-3500bc03674c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_004:Division of two negative number : -4 ÷ -2 = 2",
+              "fullTitle": "GoogleCalculatorTest_Division TC_004:Division of two negative number : -4 ÷ -2 = 2",
+              "timedOut": null,
+              "duration": 4758,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const selectors = ['[jsname=\"pPHzQc\"]', '[jsname=\"xAP7E\"]', '[jsname=\"WxTTNd\"]', '[jsname=\"pPHzQc\"]', '[jsname=\"lVjWed\"]'];\n// Loop through the array and click each element\nselectors.forEach(selector => {\n  cy.get(selector).click();\n});\n// Verify the result is -4 ÷ -2\ncy.get('#cwos').should('have.text', '-4 ÷ -2');\n// Press =\ncy.get('[jsname=\"Pt8tGc\"]').click(); //=\n// Verify the result is 2\ncy.get('#cwos').should('have.text', '2');\n// Division test completed\ncy.logSuccess('TC_004:Completed!!');",
+              "err": {},
+              "uuid": "d114feac-b8f6-4dc7-a8b3-0fc5d856ae73",
+              "parentUUID": "17cf0f18-456d-41f7-8989-3500bc03674c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_005:Diivision of one negative number and one positive number: -9 ÷ 3 = -3",
+              "fullTitle": "GoogleCalculatorTest_Division TC_005:Diivision of one negative number and one positive number: -9 ÷ 3 = -3",
+              "timedOut": null,
+              "duration": 3825,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const selectors = ['[jsname=\"pPHzQc\"]', '[jsname=\"XoxYJ\"]', '[jsname=\"WxTTNd\"]', '[jsname=\"KN1kY\"]'];\n// Loop through the array and click each element\nselectors.forEach(selector => {\n  cy.get(selector).click();\n});\n// Verify the result is -9 ÷ 3\ncy.get('#cwos').should('have.text', '-9 ÷ 3');\n// Press =\ncy.get('[jsname=\"Pt8tGc\"]').click(); //=\n// Verify the result is -3\ncy.get('#cwos').should('have.text', '-3');\n// Division test completed\ncy.logSuccess('TC_005:Completed!!');",
+              "err": {},
+              "uuid": "f1e98fbd-b84e-4dd1-964d-90bb6cdfdce3",
+              "parentUUID": "17cf0f18-456d-41f7-8989-3500bc03674c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6bc80926-04ab-4c2a-acd4-6d42692e59f4",
+            "948a5a7d-cce8-428b-bc61-b39ee81fa425",
+            "bfd1a854-2f5a-4ebe-b245-26112fa7d53e",
+            "d114feac-b8f6-4dc7-a8b3-0fc5d856ae73",
+            "f1e98fbd-b84e-4dd1-964d-90bb6cdfdce3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20484,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-16T21:37:05.500Z",
+    "end": "2024-05-16T21:37:23.502Z",
+    "duration": 18002,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fae5f6c5-db65-499f-b64a-145ca5a73f28",
+      "title": "",
+      "fullFile": "cypress\\e2e\\TS_003_SubtractionFunctionality.cy.js",
+      "file": "cypress\\e2e\\TS_003_SubtractionFunctionality.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "415052b3-ddb3-4778-98d5-22da3b71a087",
+          "title": "GoogleCalculatorTest_Subtraction",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC_001:Perform Subtraction Operation using Google calculator: 5 - 3 = 2",
+              "fullTitle": "GoogleCalculatorTest_Subtraction TC_001:Perform Subtraction Operation using Google calculator: 5 - 3 = 2",
+              "timedOut": null,
+              "duration": 4800,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const selectors = ['[jsname=\"Ax5wH\"]', '[jsname=\"pPHzQc\"]', '[jsname=\"KN1kY\"]', '[jsname=\"Pt8tGc\"]'];\n// Loop through the array and click each element\nselectors.forEach(selector => {\n  cy.get(selector).click();\n});\n// Verify the result is 2\ncy.get('#cwos').should('have.text', '2');\n// Subtraction test completed\ncy.logSuccess('TC_001: Completed');",
+              "err": {},
+              "uuid": "01ccb2d6-1a12-4b8b-acc8-b1868650bfef",
+              "parentUUID": "415052b3-ddb3-4778-98d5-22da3b71a087",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_002: Validate negative result with 3-5 = -2",
+              "fullTitle": "GoogleCalculatorTest_Subtraction TC_002: Validate negative result with 3-5 = -2",
+              "timedOut": null,
+              "duration": 3930,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const selectors = ['[jsname=\"KN1kY\"]', '[jsname=\"pPHzQc\"]', '[jsname=\"Ax5wH\"]', '[jsname=\"Pt8tGc\"]'];\n// Loop through the array and click each element\nselectors.forEach(selector => {\n  cy.get(selector).click();\n});\n// Verify the result is -2\ncy.get('#cwos').should('have.text', '-2');\n// Subtraction test completed\ncy.logSuccess('TC_002: Completed!!');",
+              "err": {},
+              "uuid": "2eca25ea-0532-4b02-b6c1-7588f330d3c3",
+              "parentUUID": "415052b3-ddb3-4778-98d5-22da3b71a087",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_003: Validate Subtraction of two negative number : -7-8 = -15",
+              "fullTitle": "GoogleCalculatorTest_Subtraction TC_003: Validate Subtraction of two negative number : -7-8 = -15",
+              "timedOut": null,
+              "duration": 4561,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const selectors = ['[jsname=\"pPHzQc\"]', '[jsname=\"rk7bOd\"]', '[jsname=\"pPHzQc\"]', '[jsname=\"pPHzQc\"]', '[jsname=\"T7PMFe\"]'];\n// Loop through the array and click each element\nselectors.forEach(selector => {\n  cy.get(selector).click();\n});\n//check entry as \"-7 -8\"\ncy.get('#cwos').should('have.text', '-7 - 8');\n//Press Enter\ncy.get('[jsname=\"Pt8tGc\"]').click(); //=\n//Verify the result is -15\ncy.get('#cwos').should('have.text', '-15');\n// Subtraction test completed\ncy.logSuccess('TC_003: Completed!!');",
+              "err": {},
+              "uuid": "7459f11f-dd33-4c17-9dcd-62425011b90d",
+              "parentUUID": "415052b3-ddb3-4778-98d5-22da3b71a087",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC_004: Validate Subtraction of one negative number and one positive number: -8-3 =-11",
+              "fullTitle": "GoogleCalculatorTest_Subtraction TC_004: Validate Subtraction of one negative number and one positive number: -8-3 =-11",
+              "timedOut": null,
+              "duration": 3570,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const selectors = ['[jsname=\"pPHzQc\"]', '[jsname=\"T7PMFe\"]', '[jsname=\"pPHzQc\"]', '[jsname=\"KN1kY\"]'];\n// Loop through the array and click each element\nselectors.forEach(selector => {\n  cy.get(selector).click();\n});\n//check entry as \"-8 - 3\"\ncy.get('#cwos').should('have.text', '-8 - 3');\n//Press Enter\ncy.get('[jsname=\"Pt8tGc\"]').click(); //=\n//Verify the result is -15\ncy.get('#cwos').should('have.text', '-11');\n// Subtraction test completed\ncy.logSuccess('TC_004: Completed!!');",
+              "err": {},
+              "uuid": "b871a598-829b-446c-89d0-d68aa6722821",
+              "parentUUID": "415052b3-ddb3-4778-98d5-22da3b71a087",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "01ccb2d6-1a12-4b8b-acc8-b1868650bfef",
+            "2eca25ea-0532-4b02-b6c1-7588f330d3c3",
+            "7459f11f-dd33-4c17-9dcd-62425011b90d",
+            "b871a598-829b-446c-89d0-d68aa6722821"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 16861,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
